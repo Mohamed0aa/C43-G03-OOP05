@@ -13,8 +13,14 @@
             #endregion
 
             #region vedio 2
-            Console.WriteLine(Utility.CalcArea(8));
+            //Console.WriteLine(Utility.CalcArea(8));
             #endregion
-        }
+
+            #region vedio 3
+            //sealed class prevent any class inherit from it
+            //sealed method prevent any class overrid  it
+            //sealed property prevent any class overrid  it
+        #endregion
+    }
     }
 }
