@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region vedio 1
+
+            rect rect = new rect();
+            rect.Dim1 = 4;
+            rect.Dim2 = 5;
+            Console.WriteLine( rect.calcArea());
+            #endregion
         }
     }
 }
