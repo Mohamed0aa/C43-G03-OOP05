@@ -50,6 +50,13 @@
 
 
             #endregion
+
+            #region project 2
+            //Console.WriteLine( math.sum(2 ,1));
+            //Console.WriteLine(math.Subtract(2, 1));
+            //Console.WriteLine(math.Multiply(2, 1));
+            //Console.WriteLine(math.Divide(2, 1));
+            #endregion
         }
     }
 }
