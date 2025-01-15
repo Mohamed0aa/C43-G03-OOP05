@@ -57,6 +57,39 @@
             //Console.WriteLine(math.Multiply(2, 1));
             //Console.WriteLine(math.Divide(2, 1));
             #endregion
+
+            #region project 3
+            decimal price=decimal.Parse(Console.ReadLine());
+            int quantity =int.Parse(Console.ReadLine());
+            string name=Console.ReadLine();
+            string user=Console.ReadLine();
+            User user1;
+            if (user == "Regular")
+            {
+                user1 = new RegularUser();
+            }
+            else if (user == "Premium")
+            {
+                user1 = new PremiumUser();
+            }
+            else
+            {
+                user1 = new GuestUser();
+            }
+            user1.name = name;
+            Discount discount = user1.GetDiscount();
+            if (discount == null)
+            {
+                Console.WriteLine("No discount is applied");
+            }
+            else
+            {
+                discount.CalculateDiscount(price, quantity);
+                double total_discout = discount.discount;
+                Console.WriteLine($"total discount ={total_discout }");
+                Console.WriteLine($"final price = {(double)(quantity * price) -total_discout}");
+            }
+            #endregion
         }
     }
 }
